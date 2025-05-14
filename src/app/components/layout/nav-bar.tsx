@@ -2,6 +2,8 @@ import { navLinks } from "@/app/libs/loops";
 import Image from "next/image";
 import styles from "@/app/styles/nav-bar.module.css";
 import { Menu } from "lucide-react";
+import Link from "next/link";
+import Button from "../shared/button";
 
 export default function NavBar() {
   return (
@@ -21,14 +23,18 @@ export default function NavBar() {
 
       <div className={`${styles.navLinks} `}>
         {navLinks.map((link, index) => (
-          <a key={index} href="#" className={`${styles.navLink} gilroy-medium`}>
-            {link}
-          </a>
+          <Link
+            key={index}
+            href={link.href}
+            className={`${styles.navLink} gilroy-medium`}
+          >
+            {link.name}
+          </Link>
         ))}
       </div>
 
       <div className={styles.navButtons}>
-        <button className={styles.navButton}>JOIN US</button>
+        <Button>JOIN US</Button>
         <Menu className={styles.navMenu} />
       </div>
     </nav>
