@@ -1,0 +1,36 @@
+.contactForm {
+  background-color: white;
+  padding: 4rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 444px;
+  border-radius: 17px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contactForm textarea {
+  border: 1px solid var(--gray-light);
+  font-size: 16px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+
+.contactButton {
+  background-color: var(--dark-bg);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
