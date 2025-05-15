@@ -1,5 +1,6 @@
 import styles from "@/app/styles/blog.module.css";
 import BlogCard from "./blog-card";
+import { blogs } from "@/app/libs/loops";
 
 export default function Blog() {
   return (
@@ -10,9 +11,9 @@ export default function Blog() {
         as a information website with a few blog posts
       </p>
       <div className={styles.blogCardsContainer}>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs.map((blog) => (
+          <BlogCard key={blog.id} blog={blog} />
+        ))}
       </div>
     </div>
   );

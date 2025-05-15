@@ -1,12 +1,19 @@
 import styles from "@/app/styles/blog-card.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Button from "../shared/button";
 
-export default function BlogCard() {
+interface BlogCardProp {
+  id: number;
+  image: StaticImageData;
+  title: string;
+  description: string;
+}
+
+export default function BlogCard({ blog }: { blog: BlogCardProp }) {
   return (
     <div className={styles.blogCard}>
       <Image
-        src="/images/blog_img.png"
+        src={blog.image}
         alt="blog image"
         quality={100}
         width={1000}
@@ -14,14 +21,8 @@ export default function BlogCard() {
         className={styles.blogCardImage}
       />
       <div>
-        <h3 className={`${styles.blogCardTitle} gilroy-bold`}>
-          How to create a navigation bar
-        </h3>
-        <p>
-          navigation bar consist of your web logo, navigation links and action
-          buttons, however, you can create unique navigations based on your
-          website genre
-        </p>
+        <h3 className={`${styles.blogCardTitle} gilroy-bold`}>{blog.title}</h3>
+        <p>{blog.description}</p>
       </div>
       <Button className={styles.blogCardButton}>Learn More</Button>
     </div>
