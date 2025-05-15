@@ -3,19 +3,19 @@ import { Youtube, Instagram, Twitter } from "lucide-react";
 export const navLinks = [
   {
     name: "Home",
-    href: "#",
+    href: "/",
   },
   {
     name: "About",
-    href: "#about",
+    href: "/about-us",
   },
   {
     name: "Contact",
-    href: "#contact",
+    href: "/contact",
   },
   {
     name: "Blog",
-    href: "#blog",
+    href: "/blog",
   },
 ];
 
