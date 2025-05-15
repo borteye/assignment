@@ -6,6 +6,10 @@
   border-radius: 17px;
 }
 
+.contactForm.contactPageFrom {
+  background-color: var(--dark-bg);
+}
+
 .contactForm form {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,10 @@
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
+}
+
+.contactLabel.contactPageLabel {
+  color: white;
 }
 
 .contactForm textarea {
