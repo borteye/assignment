@@ -6,7 +6,9 @@
   --dark-bg: #1e1e1e;
   --sky-blue: #90cdff;
   --gray-light: #d9d9d9;
-  --gray-medium: #B3B3B3
+  --gray-medium: #b3b3b3;
+  --gray-bold: #6c6c6c;
+  --royal-lavender: #9549B9;
 }
 
 @media (prefers-color-scheme: dark) {
