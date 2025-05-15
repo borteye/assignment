@@ -6,6 +6,10 @@
   border-radius: 17px;
 }
 
+.contactForm.contactPageFrom {
+  background-color: var(--dark-bg);
+}
+
 .contactForm form {
   display: flex;
   flex-direction: column;
