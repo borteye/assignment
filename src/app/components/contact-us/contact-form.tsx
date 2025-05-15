@@ -9,25 +9,53 @@ export default function ContactForm() {
   const pathname = usePathname();
   return (
     <div
-      className={` ${styles.contactForm} ${
+      className={`${styles.contactForm} ${
         pathname !== "/" && styles.contactPageFrom
       }`}
     >
       <form>
         <div>
-          <label className={styles.contactLabel}>Name *</label> <br />
+          <label
+            className={`${styles.contactLabel} ${
+              pathname !== "/" && styles.contactPageLabel
+            }`}
+          >
+            Name *
+          </label>
+          <br />
           <InputField type="text" placeholder="Name" />
         </div>
         <div>
-          <label className={styles.contactLabel}>Email *</label> <br />
+          <label
+            className={`${styles.contactLabel} ${
+              pathname !== "/" && styles.contactPageLabel
+            }`}
+          >
+            Email *
+          </label>{" "}
+          <br />
           <InputField type="text" placeholder="example@helloworld.com" />
         </div>
         <div>
-          <label className={styles.contactLabel}>Subject *</label> <br />
+          <label
+            className={`${styles.contactLabel} ${
+              pathname !== "/" && styles.contactPageLabel
+            }`}
+          >
+            Subject *
+          </label>{" "}
+          <br />
           <InputField type="text" placeholder="Enquire" />
         </div>
         <div>
-          <label className={styles.contactLabel}>Message *</label> <br />
+          <label
+            className={`${styles.contactLabel} ${
+              pathname !== "/" && styles.contactPageLabel
+            }`}
+          >
+            Message *
+          </label>{" "}
+          <br />
           <textarea name="message" id="message" rows={5}></textarea>
         </div>
         <Button className={styles.contactButton}>Send</Button>
