@@ -1,0 +1,38 @@
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blogCardImage {
+  width: 100%;
+  height: 173px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.blogCardTitle {
+  font-weight: 400;
+}
+
+.blogCardButton {
+  background-color: var(--dark-bg);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+@media (max-width: 640px) {
+  .blogCardImage {
+    height: 239px;
+  }
+
+  @media (max-width: 640px) {
+    .blogCardButton {
+      font-size: 16px;
+      padding: 0.8rem 2rem;
+    }
+  }
+}
