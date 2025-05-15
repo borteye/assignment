@@ -1,10 +1,18 @@
+"use client";
+
 import styles from "@/app/styles/contact-form.module.css";
 import InputField from "../shared/input-field";
 import Button from "../shared/button";
+import { usePathname } from "next/navigation";
 
 export default function ContactForm() {
+  const pathname = usePathname();
   return (
-    <div className={styles.contactForm}>
+    <div
+      className={` ${styles.contactForm} ${
+        pathname !== "/" && styles.contactPageFrom
+      }`}
+    >
       <form>
         <div>
           <label className={styles.contactLabel}>Name *</label> <br />
