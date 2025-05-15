@@ -1,0 +1,63 @@
+.contactHeader {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(32px, 5vw, 54.33px);
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 3rem;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 8rem;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.contactItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactItemIcon {
+  color: var(--dark-bg);
+}
+
+.contactItemDetails {
+  color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItemDetails p {
+  color: var(--sky-blue);
+  font-size: 15.95px;
+}
+
+@media (max-width: 896px) {
+  .contactContainer {
+    flex-direction: column-reverse;
+  }
+
+  .contactContent {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contactItemDetails h3 {
+    font-size: 16px;
+  }
+
+  .contactItemDetails p {
+    font-size: 12px;
+  }
+}
