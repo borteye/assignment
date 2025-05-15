@@ -1,0 +1,49 @@
+.aboutContainer {
+  display: flex;
+}
+
+.aboutHeader {
+  width: clamp(100px, 40vw, 460px);
+  background-color: var(--gray-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 0;
+}
+
+.aboutHeading {
+  font-size: clamp(32px, 5vw, 54.33px);
+  font-weight: 600;
+  rotate: -90deg;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+.aboutContent div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 745px;
+    margin: auto;
+}
+
+.aboutTitle {
+  font-size: clamp(28.94px, 5vw, 39.77px);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.aboutDescription {
+  font-size: clamp(16.57px, 2.5vw, 20px);
+}
