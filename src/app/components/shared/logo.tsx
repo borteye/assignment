@@ -1,18 +1,10 @@
 import styles from "@/app/styles/logo.module.css";
-import Image from "next/image";
+import { Globe } from "lucide-react";
 
 export default function Logo() {
   return (
     <div className={styles.LogoContainer}>
-      <Image
-        src="/images/globe.png"
-        alt="Globe"
-        width={24}
-        height={24}
-        priority
-        quality={100}
-        className={styles.Logo}
-      />
+      <Globe width={32} height={32} />
       <h1 className={styles.LogoText}>HELLO WORLD</h1>
     </div>
   );
