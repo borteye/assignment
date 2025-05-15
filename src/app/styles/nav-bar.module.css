@@ -1,0 +1,97 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1rem;
+  background-color: black;
+  color: white;
+}
+
+.navLogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.navLogoText {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  gap: 3rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  padding: 0.4rem 0;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navButton {
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 7px;
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+
+.navMenu {
+  display: none;
+}
+
+@media (max-width: 896px) {
+  .navLinks {
+    display: none;
+  }
+
+  .navMenu {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navLogo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navLogoText {
+    font-size: 1rem;
+  }
+
+  .navButtons {
+    gap: 0.8rem;
+  }
+
+  .navButton {
+    font-size: 14px;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .navMenu {
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+}
