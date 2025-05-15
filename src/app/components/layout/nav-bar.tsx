@@ -1,5 +1,4 @@
 import { navLinks } from "@/app/libs/loops";
-import Image from "next/image";
 import styles from "@/app/styles/nav-bar.module.css";
 import { Menu } from "lucide-react";
 import Link from "next/link";
